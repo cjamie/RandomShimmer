@@ -11,6 +11,11 @@
 		5F75C82D2C1CE808000B053D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75C82C2C1CE808000B053D /* ContentView.swift */; };
 		5F75C82F2C1CE80B000B053D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F75C82E2C1CE80B000B053D /* Assets.xcassets */; };
 		5F75C8322C1CE80B000B053D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F75C8312C1CE80B000B053D /* Preview Assets.xcassets */; };
+		5F75C8392C1CE82B000B053D /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75C8382C1CE82B000B053D /* Shimmer.swift */; };
+		5F75C83C2C1CE9B2000B053D /* Gen in Frameworks */ = {isa = PBXBuildFile; productRef = 5F75C83B2C1CE9B2000B053D /* Gen */; };
+		5F75C83E2C1CEA1D000B053D /* GenStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75C83D2C1CEA1D000B053D /* GenStuff.swift */; };
+		5F75C8402C1CF9E1000B053D /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F75C83F2C1CF9E1000B053D /* Temp.swift */; };
+		5FF255232C1D40D3003D9B8C /* FlexibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF255222C1D40D3003D9B8C /* FlexibleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,10 @@
 		5F75C82C2C1CE808000B053D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5F75C82E2C1CE80B000B053D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F75C8312C1CE80B000B053D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F75C8382C1CE82B000B053D /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		5F75C83D2C1CEA1D000B053D /* GenStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenStuff.swift; sourceTree = "<group>"; };
+		5F75C83F2C1CF9E1000B053D /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		5FF255222C1D40D3003D9B8C /* FlexibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F75C83C2C1CE9B2000B053D /* Gen in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +61,12 @@
 		5F75C8292C1CE808000B053D /* ShimmerGen */ = {
 			isa = PBXGroup;
 			children = (
+				5FF255222C1D40D3003D9B8C /* FlexibleView.swift */,
 				5F75C82A2C1CE808000B053D /* ShimmerGenApp.swift */,
 				5F75C82C2C1CE808000B053D /* ContentView.swift */,
+				5F75C83F2C1CF9E1000B053D /* Temp.swift */,
+				5F75C83D2C1CEA1D000B053D /* GenStuff.swift */,
+				5F75C8382C1CE82B000B053D /* Shimmer.swift */,
 				5F75C82E2C1CE80B000B053D /* Assets.xcassets */,
 				5F75C8302C1CE80B000B053D /* Preview Content */,
 			);
@@ -83,6 +97,9 @@
 			dependencies = (
 			);
 			name = ShimmerGen;
+			packageProductDependencies = (
+				5F75C83B2C1CE9B2000B053D /* Gen */,
+			);
 			productName = ShimmerGen;
 			productReference = 5F75C8272C1CE808000B053D /* ShimmerGen.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 5F75C81E2C1CE808000B053D;
+			packageReferences = (
+				5F75C83A2C1CE9B2000B053D /* XCRemoteSwiftPackageReference "swift-gen" */,
+			);
 			productRefGroup = 5F75C8282C1CE808000B053D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F75C82D2C1CE808000B053D /* ContentView.swift in Sources */,
+				5FF255232C1D40D3003D9B8C /* FlexibleView.swift in Sources */,
+				5F75C8402C1CF9E1000B053D /* Temp.swift in Sources */,
+				5F75C8392C1CE82B000B053D /* Shimmer.swift in Sources */,
 				5F75C82B2C1CE808000B053D /* ShimmerGenApp.swift in Sources */,
+				5F75C83E2C1CEA1D000B053D /* GenStuff.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5F75C83A2C1CE9B2000B053D /* XCRemoteSwiftPackageReference "swift-gen" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-gen.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F75C83B2C1CE9B2000B053D /* Gen */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F75C83A2C1CE9B2000B053D /* XCRemoteSwiftPackageReference "swift-gen" */;
+			productName = Gen;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F75C81F2C1CE808000B053D /* Project object */;
 }
